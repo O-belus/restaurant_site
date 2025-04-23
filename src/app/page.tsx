@@ -1,3 +1,5 @@
+
+
 import Image from "next/image";
 import Link from "next/link";
 import heroImage from "../../public/pexels-valeriya-1833349.jpg"
@@ -7,13 +9,15 @@ import { the_night_watch } from "./layout";
 import Menuitem from "./components/Menuitem";
 import Button from "./components/Button";
 import interiorImage from "../../public/pexels-davidguerrero-2945691.jpg"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
+import Carousel_feedback from "./components/Carousel_feedback";
+import allDishes from "../data/dishes.json"
+import DialogPop from "./components/DialogPop"
+import GoogleMaps from "@/components/GoogleMaps";
+import { FaArrowRight } from "react-icons/fa";
+import { HiArrowLongRight } from "react-icons/hi2";
+
+
+
 
 
 export default function Home() {
@@ -35,7 +39,7 @@ export default function Home() {
           />
           <div className="absolute hidden sm:block top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 leading-tight font-thin ">
             <h1 className={` text-sea_shell-200 sm:text-[200px]  ${the_night_watch.className} `}>SAILOR</h1>
-            <Link href="/menu" className=" hidden sm:block hover:text-sea_shell-300 text-sea_shell-200 float-right font-manrope " >------------{">"} view menu </Link>
+            <Link href="/Menu" className=" hidden sm:block hover:text-sea_shell-300 text-sea_shell-200 float-right font-manrope " > <HiArrowLongRight className=" text-4xl inline-block "/> view menu </Link>
           </div>
         </section>
 
@@ -63,7 +67,7 @@ export default function Home() {
             />
           </div>
 
-          <Link href="/about" className=" sm:row-start-3 sm:col-span-4 text-sea_shell-200 hover:text-sea_shell-300 font-manrope " > --------------{">"} Learn more </Link>
+          <Link href="/About" className=" sm:row-start-3 sm:col-span-4 text-sea_shell-200 hover:text-sea_shell-300 font-manrope " ><HiArrowLongRight className=" text-4xl inline-block "/> Learn more </Link>
         </section>
 
 
@@ -73,28 +77,52 @@ export default function Home() {
 
           <div className="  w-full grid gap-4 sm:grid-cols-12 sm:grid-rows-6 ">
             <Link href="/menu" className=" sm:row-span-6 sm:col-span-6 w-full aspect-square ">
-              <Menuitem name = "pop"/>
+              <Menuitem 
+              name="Main dishes"
+              url={allDishes.main_dishes[0].image.url}
+              id={allDishes.main_dishes[0].id.toString()}
+              height={allDishes.main_dishes[0].image.height}
+              width={allDishes.main_dishes[0].image.width}
+              key={allDishes.main_dishes[0].id}
+              />
             </Link>
             
             <Link href="/menu" className=" sm:row-span-3 sm:col-span-3 w-full aspect-square ">
-              <Menuitem name = "pop"/>
+            <Menuitem 
+              name="Desserts"
+              url={allDishes.desserts[3].image.url}
+              id={allDishes.desserts[3].id.toString()}
+              height={allDishes.desserts[3].image.height}
+              width={allDishes.desserts[3].image.width}
+              key={allDishes.desserts[3].id}
+              />
             </Link>
 
             <Link href="/menu" className=" sm:row-span-3 sm:col-span-3 w-full aspect-square ">
-              <Menuitem name = "pop"/>
+            <Menuitem 
+              name="Drinks"
+              url={allDishes.drinks[0].image.url}
+              id={allDishes.drinks[0].id.toString()}
+              height={allDishes.drinks[0].image.height}
+              width={allDishes.drinks[0].image.width}
+              key={allDishes.drinks[0].id}
+              />
             </Link>
             
-            <Link href="/about" className=" sm:row-start-6 sm:col-start-11 text-right sm:col-span-2 text-sea_shell-200 hover:text-sea_shell-300 font-manrope " > --------------{">"} All menu </Link>
+            <Link href="/Menu" className=" sm:row-start-6 sm:col-start-11 text-right sm:col-span-2 text-sea_shell-200 hover:text-sea_shell-300 font-manrope " ><HiArrowLongRight className=" text-4xl inline-block "/> All menu </Link>
           </div>
         </section>
 
 
 
-        <section id="table booking" className=" flex flex-col items-center justify-center relative h-svh sm:h-[calc(100vh-200px)] ">
-          <div className=" absolute max-w-3xl w-5/6 sm:bg-sea_green/50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <section id="table booking" className=" flex sm:mb-24 mb-16 flex-col items-center justify-center relative h-svh sm:h-[calc(100vh-200px)] ">
+          <div className=" absolute py-6 max-w-3xl w-5/6 sm:bg-sea_green/50 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <h3 className={` mb-4 text-4xl sm:text-5xl  text-center text-sea_shell-200 ${the_night_watch.className} `}>HOW TO BOOK A TABLE</h3>
             <p className=" font-manrope mb-8 text-center text-sea_shell-200 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat magni, Velit consequatur  </p>
-            <Button className=" block mx-auto " >Book a table</Button>
+            <div className=" pl-20 sm:pl-72 ">
+              <DialogPop/>
+            </div>
+            
           </div>
 
           <Image 
@@ -108,8 +136,108 @@ export default function Home() {
         </section>
 
         <section id="our clients" className=" max-w-[1800px] sm:mb-24 mb-16 sm:mx-auto w-full px-4 sm:px-32 ">
-          <h1 className={` text-5xl mb-8 text-sea_shell-200 ${the_night_watch.className}`}>OUR CLIENTS</h1>          
+          <h1 className={` text-5xl mb-8 text-sea_shell-200 ${the_night_watch.className}`}>OUR CLIENTS</h1>
+          <Carousel_feedback/>
+          <div className=" text-sea_shell-200 w-full flex justify-end mt-8 " >
+            <p className="  "><HiArrowLongRight className=" text-4xl inline-block "/> Leave feedback</p>
+          </div>
+          
         </section>
+
+        <section id="instagram" className=" max-w-[1800px] sm:mb-24 sm:mx-auto w-full px-4 sm:px-32 ">
+
+          <h2 className={` text-5xl mb-8 text-sea_shell-200 ${the_night_watch.className}`}>OUR INSTAGRAM</h2>
+
+          <div className=" grid grid-rows-4 sm:grid-rows-3 grid-cols-4 gap-4 sm:grid-cols-8  ">
+
+            <div className=" col-span-2 row-span-2 aspect-square ">
+            <Image 
+            src={heroImage}
+            height={400}
+            width={400}
+            alt="image of a dish"
+            className="rounded object-cover h-full w-full "
+            />
+            </div>
+
+
+            <div className=" col-span-2 row-span-3  ">
+            <Image 
+            src={heroImage}
+            alt="image of a dish"
+            height={600}
+            width={400}
+            className="rounded object-cover h-full w-full "
+            />
+            </div>
+
+            <div className=" hidden  col-span-2 row-span-2 row-start-2 col-start-5 sm:block aspect-square ">
+            <Image 
+            src={heroImage2}
+            alt="image of a dish"
+            height={400}
+            width={400}
+            className="rounded object-cover h-full w-full "
+            />
+
+            </div>
+          
+            <div className=" hidden col-span-2 row-span-2 sm:block aspect-square ">
+            <Image 
+            src={heroImage}
+            alt="image of a dish"
+            height={600}
+            width={400}
+            className="rounded object-cover h-full w-full "
+            />
+            </div>
+
+            <div className=" sm:col-span-1 sm:col-start-8 sm:row-start-3 sm:row-span-1 row-start-4 col-span-2  ">
+              <Link href="/follow us" className=" font-manrope float-right text-sea_shell-200 sm:mt-16 hover:text-sea_shell-300 "><HiArrowLongRight className=" text-4xl inline-block "/> Follow us</Link>
+            </div>
+
+          </div>
+
+        </section>
+
+
+        <section id="our location" className=" hidden sm:block text-sea_shell-200  w-full max-w-[1800px] mx-auto mt-8 sm:mt-14 sm:h-[700px] overflow-hidden sm:px-32 ">
+          <h2 className={` text-5xl mb-8 text-sea_shell-200 ${the_night_watch.className}`}>OUR LOCATION</h2>
+          <div className=" flex  justify-center   flex-col sm:flex-row gap-8 ">
+              <div className=" h-[600px] sm:h-[500px] sm:w-2/3 w-full  ">
+                  <GoogleMaps />
+              </div>
+
+              <div className=" sm:w-1/3 ">
+                <ul className="mb-16 ">
+                  <li className=" mb-4 ">
+                    <p><span>WORKING HOURS:</span> Monday-Sunday, 10.00-23.00</p>
+                  </li>
+                  <li className=" mb-4 ">
+                     <span className=" font-bold ">PHONE: </span>  +00000000
+                  </li>
+                  <li className=" mb-4 ">
+                    <span className=" font-bold ">ADDRESS: </span>  Blah, blah blah, blah.
+                  </li>
+                  <li className=" mb-8 ">
+                    <span className=" font-bold ">EMAIL: </span>  sailor@gmail.com
+                  </li>
+                </ul>
+                
+                <div className="  ">
+                  <Image 
+                  src={heroImage2} 
+                  alt="image of the restaurant"
+                  className=" aspect-video object-cover rounded "
+                  />
+                </div>
+              </div>
+
+                        
+
+           </div>
+                    
+         </section>
 
 
         

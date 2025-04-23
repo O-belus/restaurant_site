@@ -1,0 +1,334 @@
+{
+  "main_dishes": [
+    {
+      "id": 1,
+      "image": {
+        "url": "/caroline-attwood-bpPTlXWTOvg-unsplash.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Grilled Salmon"
+    },
+    {
+      "id": 2,
+      "image": {
+        "url": "/pexels-solliefoto-566345.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Lobster Thermidor"
+    },
+    {
+      "id": 3,
+      "image": {
+        "url": "pexels-farhad-8697543.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Shrimp Scampi"
+    },
+    {
+      "id": 4,
+      "image": {
+        "url": "pexels-onbab-11689800.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Seafood Paella"
+    },
+    {
+      "id": 5,
+      "image": {
+        "url": "pexels-amar-18032209.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Fish Tacos"
+    },
+    {
+      "id": 6,
+      "image": {
+        "url": "pexels-valeriya-20184713.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Crab Cakes"
+    },
+    {
+      "id": 7,
+      "image": {
+        "url": "pexels-vincenzo-iorio-381015179-27662770.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Seared Tuna Steak"
+    },
+    {
+      "id": 8,
+      "image": {
+        "url": "pexels-valeriya-29843072.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Grilled Octopus"
+    },
+    {
+      "id": 9,
+      "image": {
+        "url": "pexels-philippe-alamazani-508356-27565826.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Fried Calamari"
+    }
+  ],
+  "desserts": [
+    {
+      "id": 10,
+      "image": {
+        "url": "pexels-ann-zzz-60709506-8330845.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Key Lime Pie"
+    },
+    {
+      "id": 11,
+      "image": {
+        "url": "pexels-delphine-hourlay-91322-691147.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Chocolate Mousse"
+    },
+    {
+      "id": 12,
+      "image": {
+        "url": "pexels-valeriya-17628619.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Crème Brûlée"
+    },
+    {
+      "id": 13,
+      "image": {
+        "url": "pexels-valeriya-827513.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Cheesecake with Berries"
+    },
+    {
+      "id": 14,
+      "image": {
+        "url": "pexels-yaroslav-shuraev-4472870.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Tiramisu"
+    },
+    {
+      "id": 15,
+      "image": {
+        "url": "pexels-valeriya-16134591.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Fruit Sorbet"
+    },
+    {
+      "id": 16,
+      "image": {
+        "url": "pexels-thoinamcao-14732341.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Bread Pudding"
+    },
+    {
+      "id": 17,
+      "image": {
+        "url": "pexels-harriet-b-392993362-31008103.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Panna Cotta"
+    },
+    {
+      "id": 18,
+      "image": {
+        "url": "pexels-alesiakozik-6064817.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Lemon Tart"
+    }
+  ],
+  "soups": [
+    {
+      "id": 19,
+      "image": {
+        "url": "corn-chowder-7559218_640.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "New England Clam Chowder"
+    },
+    {
+      "id": 20,
+      "image": {
+        "url": "pexels-shameel-mukkath-3421394-17598231.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Lobster Bisque"
+    },
+    {
+      "id": 21,
+      "image": {
+        "url": "seafood-soup-4505211_640.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Seafood Gumbo"
+    },
+    {
+      "id": 22,
+      "image": {
+        "url": "subagus-indra-XkaqvzSOgvE-unsplash.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Thai Coconut Soup"
+    },
+    {
+      "id": 23,
+      "image": {
+        "url": "roni-herdyanzah-vrX8M4Plu8U-unsplash.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Creamy Shrimp Soup"
+    },
+    {
+      "id": 24,
+      "image": {
+        "url": "keesha-s-kitchen-gDwy_JEoz8k-unsplash.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Miso Soup with Clams"
+    },
+    {
+      "id": 25,
+      "image": {
+        "url": "stephen-kong-Mhl1CSN1fZQ-unsplash.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Mediterranean Fish Soup"
+    },
+    {
+      "id": 26,
+      "image": {
+        "url": "robert-eklund-zD5_KJEeNS0-unsplash.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Spicy Seafood Soup"
+    },
+    {
+      "id": 27,
+      "image": {
+        "url": "nick-karvounis-YmyFBvW7oG8-unsplash.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Tomato Basil Soup with Crab"
+    }
+  ],
+  "drinks": [
+    {
+      "id": 28,
+      "image": {
+        "url": "pexels-timur-weber-8679153.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Classic Margarita"
+    },
+    {
+      "id": 29,
+      "image": {
+        "url": "pexels-taryn-elliott-4457151.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Mojito"
+    },
+    {
+      "id": 30,
+      "image": {
+        "url": "noelia-vega-Cx83w8CGHx0-unsplash.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Piña Colada"
+    },
+    {
+      "id": 31,
+      "image": {
+        "url": "rhianon-lassila-vbVD8dywQ6w-unsplash.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "White Wine Spritzer"
+    },
+    {
+      "id": 32,
+      "image": {
+        "url": "svitlana-mnkU6aQowCE-unsplash.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Bloody Mary"
+    },
+    {
+      "id": 33,
+      "image": {
+        "url": "keesha-s-kitchen-ZLiz_2W9-k8-unsplash.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Iced Tea with Lemon"
+    },
+    {
+      "id": 34,
+      "image": {
+        "url": "slice-69745_640.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Fresh Lime Soda"
+    },
+    {
+      "id": 35,
+      "image": {
+        "url": "pexels-roman-odintsov-6342182.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Tropical Fruit Punch"
+    },
+    {
+      "id": 36,
+      "image": {
+        "url": "pexels-cottonbro-8944962.jpg",
+        "width": 600,
+        "height": 400
+      },
+      "name": "Sparkling Water with Citrus"
+    }
+  ]
+}

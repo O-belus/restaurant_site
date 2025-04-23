@@ -1,13 +1,21 @@
-
+'use client'
 
 import Link from "next/link"
 import { the_night_watch } from "../layout"
+import { HiArrowLongRight } from "react-icons/hi2"
 
 
 
 
 
 const Footer = () => {
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    }
   return (
     <footer id="footer" className=" hidden border-t-2 border-sea_shell-300 bg-sea_green w-full sm:block " >
         <div className=" flex text-lg pt-8 border-b-2 border-sea_shell-300 pb-8 max-w-[1800px] justify-between w-11/12  mx-auto flex-row text-sea_shell-200 font-manrope ">
@@ -75,13 +83,13 @@ const Footer = () => {
                         
                     </ul>
 
-                    <button   className=" left-0 p-0 h-8 -rotate-90  transform translate-y-full translate-x-1/3 ">----------------{">"}</button>
+                    <button onClick={() => scrollToTop()}  className=" left-0 p-0 h-8 -rotate-90  transform translate-y-full translate-x-1/3 "><HiArrowLongRight className=" text-4xl inline-block "/></button>
 
                 </div>
 
-                <div className=" w-full border-b-2 pb-2 border-sea_shell-300 ">
+                <div className=" w-1/2 border-b-2 pb-2 border-sea_shell-300 ">
                     <input type="text" placeholder=" Your email "  className=" bg-transparent w-3/5 font-manrope placeholder:text-sea_shell-200/50  " />
-                    <button className=" pl-4 ">----------------------------{">"}</button>
+                    <button className=" float-right "><HiArrowLongRight className=" text-4xl inline-block "/></button>
                 </div>
             </div>
 
