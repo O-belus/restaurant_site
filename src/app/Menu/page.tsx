@@ -109,7 +109,7 @@ const Page = () => {
                     </Breadcrumb>
                 </div>
 
-                <div className=" flex flex-wrap gap-6 sm:gap-12 w-full max-w-[1800px] sm:mx-auto ml-8 sm:ml-16 sm:text-3xl ">
+                <div className=" flex flex-wrap gap-6 sm:gap-12  max-w-[1800px] sm:mx-auto ml-8 sm:ml-16 sm:text-3xl ">
                   <button onClick={() => menuHandle(0)} className={currentMenu===allDishes.main_dishes? activeClass : inactiveClass}>Main dishes</button>
                   <button onClick={() => menuHandle(1)} className={currentMenu===allDishes.desserts? activeClass : inactiveClass}>Desserts</button>
                   <button onClick={() => menuHandle(2)} className={currentMenu===allDishes.soups? activeClass : inactiveClass}>Soups</button>
