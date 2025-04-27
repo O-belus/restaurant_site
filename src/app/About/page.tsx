@@ -16,9 +16,9 @@ import {
   import { Slash } from "lucide-react"
   
 import Image from "next/image"
-import ambImage1 from "../../../public/pexels-catscoming-1907223.jpg"
-import ambImage2 from "../../../public/pexels-cottonbro-3296546.jpg"  
-import ambImage3 from "../../../public/pexels-taryn-elliott-4457125.jpg"
+import ambImage1 from "../../../public/pexels-catscoming-1907223_compressed.webp"
+import ambImage2 from "../../../public/pexels-cottonbro-3296546_compressed.webp"  
+import ambImage3 from "../../../public/pexels-taryn-elliott-4457125_compressed.webp"
 import localFont from "next/font/local"
 
 const the_night_watch = localFont({

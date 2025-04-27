@@ -1,5 +1,5 @@
 import Image from "next/image"
-import imgSrc from "/pexels-catscoming-1907223.jpg"
+import imgSrc from "/pexels-catscoming-1907223_compressed.webp"
 import { twMerge } from "tailwind-merge"
 
 type MenuitemProps = {

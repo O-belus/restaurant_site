@@ -2,13 +2,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import heroImage from "../../public/pexels-valeriya-1833349.jpg"
-import heroImage2 from "../../public/pexels-ilyas-10839568.jpg"
-import chefImage from "../../public/pexels-taryn-elliott-4457125.jpg"
+import heroImage from "../../public/pexels-valeriya-1833349_compressed.webp"
+import heroImage2 from "../../public/pexels-ilyas-10839568_compressed.webp"
+
+
+import chefImage from "../../public/pexels-taryn-elliott-4457125_compressed.webp"
 import { the_night_watch } from "./layout";
 import Menuitem from "./components/Menuitem";
 import Button from "./components/Button";
-import interiorImage from "../../public/pexels-davidguerrero-2945691.jpg"
+import interiorImage from "../../public/pexels-davidguerrero-2945691_compressed.webp"
 import Carousel_feedback from "./components/Carousel_feedback";
 import allDishes from "../data/dishes.json"
 import DialogPop from "./components/DialogPop"
