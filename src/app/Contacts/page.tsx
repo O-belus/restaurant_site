@@ -9,13 +9,14 @@ import {
     BreadcrumbSeparator,
   } from "@/components/ui/breadcrumb"
   import { Slash } from "lucide-react"
-  import GoogleMaps from "@/components/GoogleMaps"
+  
 
   import localFont from "next/font/local"
   import Menuitem from "../components/Menuitem";
   import Link from "next/link";
   import allDishes from "../../data/dishes.json"
 import { HiArrowLongRight } from "react-icons/hi2";
+import LeafletMap from "../components/LeafletMap";
   
   
 
@@ -80,7 +81,7 @@ export default function contacts() {
                         </div>
 
                         <div className=" h-[600px] sm:h-[400px] sm:w-1/2 w-full  ">
-                            <GoogleMaps />
+                            <LeafletMap />
                         </div>
                     </div>
                     

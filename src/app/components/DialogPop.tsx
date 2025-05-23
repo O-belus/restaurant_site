@@ -31,16 +31,16 @@ export default function DialogCloseButton() {
             </DialogDescription>
             </DialogHeader>
             <div>
-                <Input className=" bg-inherit border-b-2 rounded-none border-l-0 border-t-0 border-r-0 placeholder:text-sea_shell-200 mb-4 "
+                <Input className=" bg-inherit border-b-2 rounded-none border-l-0 border-t-0 border-r-0 placeholder:text-sea_shell-200 text-sea_shell-200 mb-4 "
                 placeholder="Your name"
                 />
 
-                <Input className=" bg-inherit border-b-2 border-l-0 rounded-none mb-4 border-t-0 border-r-0 placeholder:text-sea_shell-200 "
-                placeholder="Your name"
+                <Input className=" text-sea_shell-200 bg-inherit border-b-2 border-l-0 rounded-none mb-4 border-t-0 border-r-0 placeholder:text-sea_shell-200 "
+                placeholder="Your email"
                 />
 
-                <Input className=" bg-inherit border-b-2 border-l-0 border-t-0 rounded-none mb-4 border-r-0 placeholder:text-sea_shell-200 "
-                placeholder="Your name"
+                <Input className=" text-sea_shell-200 bg-inherit border-b-2 border-l-0 border-t-0 rounded-none mb-4 border-r-0 placeholder:text-sea_shell-200 "
+                placeholder="Your phone number"
                 />
                 <Button type="submit"  className={` mx-auto mt-8  `}>Submit</Button>
             </div>
