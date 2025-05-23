@@ -16,8 +16,8 @@ import {
   import Link from "next/link";
   import allDishes from "../../data/dishes.json"
 import { HiArrowLongRight } from "react-icons/hi2";
-import LeafletMap from "../components/LeafletMap";
-  
+
+import MapWrapper from "../components/MapWrapper";
   
 
 const the_night_watch = localFont({
@@ -81,7 +81,7 @@ export default function contacts() {
                         </div>
 
                         <div className=" h-[600px] sm:h-[400px] sm:w-1/2 w-full  ">
-                            <LeafletMap />
+                            <MapWrapper />
                         </div>
                     </div>
                     

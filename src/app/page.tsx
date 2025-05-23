@@ -14,7 +14,7 @@ import interiorImage from "../../public/pexels-davidguerrero-2945691_compressed.
 import Carousel_feedback from "./components/Carousel_feedback";
 import allDishes from "../data/dishes.json"
 import DialogPop from "./components/DialogPop"
-import LeafletMap from "./components/LeafletMap";
+import MapWrapper from "./components/MapWrapper";
 
 import { FaArrowRight } from "react-icons/fa";
 import { HiArrowLongRight } from "react-icons/hi2";
@@ -208,7 +208,7 @@ export default function Home() {
           <h2 className={` text-5xl mb-8 text-sea_shell-200 ${the_night_watch.className}`}>OUR LOCATION</h2>
           <div className=" flex  justify-center   flex-col sm:flex-row gap-8 ">
               <div className=" h-[600px] sm:h-[500px] sm:w-2/3 w-full  ">
-                  <LeafletMap />
+                  <MapWrapper />
               </div>
 
               <div className=" sm:w-1/3 ">
